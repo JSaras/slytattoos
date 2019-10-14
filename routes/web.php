@@ -14,3 +14,31 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home', function () {
+    return view('welcome');
+});
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/portfolio', function () {
+    return view('portfolio');
+});
+
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
