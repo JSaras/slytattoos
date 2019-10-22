@@ -6,3 +6,19 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+body {
+    background-color: beige;
+}
+
+.navbarTop{
+    padding: 0, 20px;
+    margin: 0, 10px;
+    display: flex;
+    float: left;
+    overflow: hidden;
+}
+
+.navbarTop a {
+    padding: 0, 10px;
+}

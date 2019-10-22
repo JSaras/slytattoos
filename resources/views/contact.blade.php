@@ -7,6 +7,7 @@
     <title>Contact</title>
 </head>
 <body>
+@include('layouts.app')
     <h1>Contact</h1>
 </body>
 </html>
