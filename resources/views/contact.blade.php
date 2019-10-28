@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact</title>
-</head>
-<body>
-@include('layouts.app')
-    <h1>Contact</h1>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('content')
+    <h1>Welcome to the Contact page</h1>
+    <p>Contact SlyTattoos <br> Phone: - <br> E-Mail: - <br> Adress: - <br>
+    </p>
+@endsection

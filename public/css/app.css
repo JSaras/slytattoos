@@ -10645,7 +10645,7 @@ a.text-dark:focus {
 }
 
 body {
-  background-color: beige;
+  background: beige !important;
 }
 
 .navbarTop {
@@ -10654,7 +10654,6 @@ body {
   display: flex;
   float: left;
   overflow: hidden;
-  padding: 0, 10px;
 }
 
 .navbarTop a {

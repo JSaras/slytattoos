@@ -6,15 +6,18 @@ use Illuminate\Http\Request;
 
 class Postscontroller extends Controller
 {
-    @return
     public function index()
     {
         return view('posts.index');
     }
+
+    public function about()
+    {
+        return view('posts.about');
+    }
+
 }
 
-@return
-
-public function create(){
-
-}
+// public function create(){
+// //
+// }

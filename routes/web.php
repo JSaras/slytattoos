@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/portfolio', 'PagesController@portfolio');
+Route::get('/contact', 'PagesController@contact');
+
 
 Route::get('/home', function () {
     return view('welcome');
@@ -23,17 +25,9 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/portfolio', function () {
-    return view('portfolio');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/users/{id}/{name}', function ($id, $name){
+//     return 'This is user '.$name.' with an id of '.$id;
+// });
 
 Auth::routes();
 
