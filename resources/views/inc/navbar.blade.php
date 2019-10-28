@@ -32,6 +32,7 @@
             <a href="/about">About</a></li>
             <a href="/portfolio">Portfolio</a></li>
             <a href="/contact">Contact</a></li>
+            <a href="/posts">Posts</a></li>
         </div>
       </div>
     </nav>
