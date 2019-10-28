@@ -21,17 +21,17 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">SlyTattoos</a>
+          <a class="navbar-brand" href="/">{{ config('app.name') }}</a>
         </div>
         <div class="navbarTop">
             <a href="/about">About</a></li>
             <a href="/portfolio">Portfolio</a></li>
+            <a href="/contact">Contact</a></li>
         </div>
       </div>
     </nav>

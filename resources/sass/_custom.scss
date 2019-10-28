@@ -1,3 +1,16 @@
 body {
     background: beige !important;
 }
+
+.navbarTop{
+    padding: 0, 20px;
+    margin: 0, 10px;
+    display: flex;
+    float: left;
+    overflow: hidden;
+}
+
+.navbarTop a {
+    padding: 0, 10px;
+    margin: 5px;
+}
