@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Posts</h1>
+    <h1>Portfolio</h1>
     @if(count($posts) > 0)
         @foreach($posts as $post)
             <div class="card" style="width: 30rem; padding: 10px; margin: 0 0 10px 20px;">
@@ -9,6 +9,7 @@
                 <small>Written on {{$post->created_at}}</small>
             </div>
         @endforeach
+        {{$posts->links()}}
     @else
         <h1>No posts found</h1>
     @endif
