@@ -16,25 +16,12 @@ Route::get('/about', 'PagesController@about');
 Route::get('/portfolio', 'PagesController@portfolio');
 Route::get('/contact', 'PagesController@contact');
 
-
-Route::get('/home', function () {
-    return view('welcome');
-});
-
-Route::get('/test', function () {
-    return view('test');
-});
-
 // Route::get('/users/{id}/{name}', function ($id, $name){
 //     return 'This is user '.$name.' with an id of '.$id;
 // });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 Route::resource('posts', 'PostsController');
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index')->name('home');
+

@@ -14,5 +14,4 @@
         <h1>No posts found</h1>
     @endif
     <br>
-    <a href="/posts/create" class="btn btn-dark">Create Post</a>
 @endsection
