@@ -11,6 +11,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://cdn.tiny.cloud/1/fef6u97l8hjm1t2qe1eercaesaq38ljabjjww7fktf2go2p9/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({selector:'textarea'});</script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -72,6 +74,7 @@
 
         <main class="py-4">
             <div class="container">
+            @include('inc.messages')
             @yield('content')
             </div>
         </main>
